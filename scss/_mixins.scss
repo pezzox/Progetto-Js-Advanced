@@ -1,6 +1,0 @@
-@mixin dark-mode {
-  html.dark-mode &,
-  body.dark-mode & {
-    @content;
-  }
-}
