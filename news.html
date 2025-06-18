@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tongue News</title>
-    <script type="module" src="./assets/index.js"></script>
+    <script type="module" src="./assets/news-abc123.js"></script>
+
   </head>
-  <body>
-    <header>
+  <body class="light-mode">
+    <header class="site-header">
       <a href="./index.html">Home</a> |
       <a href="./news.html">News</a>
       <button id="theme-toggle">🌚/☀️</button>
@@ -21,4 +22,16 @@
     </section>
 
     <main>
-      <div id="news-container
+      <section class="news-wrapper">
+        <div id="news-container" class="news-grid"></div>
+        <button id="load-more">Carica Altre</button>
+        <div id="loader" class="loader"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tongue - Tutti i diritti riservati<br />
+      Questo sito è un progetto didattico e non rappresenta un'iniziativa editoriale reale.</p>
+    </footer>
+  </body>
+</html>
