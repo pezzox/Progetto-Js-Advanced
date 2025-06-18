@@ -1,61 +1,110 @@
-# Progetto-Js-Advanced
+# Progetto JS Advanced – TONGUE 📰
 
-✨ **Funzionalità**
-- Tema chiaro/scuro con salvataggio in `localStorage`
-- Dark mode gestita tramite `body.dark-mode` con supporto SCSS
-- Layout responsive per mobile e desktop
-- Struttura piramidale con box quadrate e contenuti visivi
-- Recupero asincrono delle notizie tech da Hacker News
-- Pulsante "Carica Altre" per il caricamento progressivo delle news
-- Effetti visivi con ombre, bordi arrotondati e immagini responsive
-- Struttura degli assets organizzata in `assets/img/` secondo convenzione
-
-🖼 **Anteprima**
-Apri `index.html` nel browser per vedere la homepage.
-Visita anche `news.html` per la sezione notizie in tempo reale.
-
-🌗 **Modalità Scura**
-- Attivabile manualmente con il pulsante 🌚/☀️
-- La scelta viene salvata in `localStorage` e mantenuta anche dopo il refresh
-- Lo stile cambia dinamicamente su tutti gli elementi grazie alle classi e SCSS
-
-🛠 **Tecnologie Usate**
-- HTML5
-- SCSS modulare (`_style.scss`, `_news.scss`, ecc.)
-- JavaScript (Vanilla)
-- Fetch API per l'interazione con API esterne
-- Responsive Design con Flexbox e media queries
-
-🔌 **API Usata**
-Hacker News API:
-- Notizie nuove: [`https://hacker-news.firebaseio.com/v0/newstories.json`](https://hacker-news.firebaseio.com/v0/newstories.json)
-- Dettagli notizia: [`https://hacker-news.firebaseio.com/v0/item/{id}.json`](https://hacker-news.firebaseio.com/v0/item/{id}.json)
-
-📁 **Struttura Progetto**
-├── index.html
-├── news.html
-├── js/
-│ ├── main.js
-│ └── news.js
-├── scss/
-│ ├── _style.scss
-│ ├── _news.scss
-│ ├── _mixins.scss
-│ ├── _variables.scss
-│ └── main.scss
-├── assets/
-│ └── img/
-
-
-📲 **Istruzioni per l'Uso**
-1. Clona o scarica la repo: [`https://github.com/pezzox/Progetto-Js-Advanced`](https://github.com/pezzox/Progetto-Js-Advanced)
-2. Apri `index.html` in un browser oppure visita la versione online:
-   [`https://pezzox.github.io/Progetto-Js-Advanced/`](https://pezzox.github.io/Progetto-Js-Advanced/)
-3. Usa il pulsante in alto a destra per cambiare tema.
-4. Visita la sezione News per vedere le notizie in tempo reale.
-
-✍️ **Autori**
-Questo progetto è stato realizzato da **Federico Pezzotti** come parte del percorso *Start2Impact*.
+Un'applicazione responsive in JavaScript moderno che simula una piattaforma di informazione tech in tempo reale. Il progetto include un sistema di **dark mode**, caricamento dinamico di contenuti tramite **API Hacker News**, gestione modulare con **SCSS** e **Vite** come bundler.
 
 ---
 
+## ✨ Funzionalità
+
+- Modalità chiaro/scuro attivabile manualmente, con salvataggio in `localStorage`
+- Tema scuro gestito via classe `body.dark-mode` con supporto SCSS
+- Layout responsive mobile-first con Flexbox e media queries
+- Struttura visiva a griglia con box quadrate e immagini dinamiche
+- Caricamento asincrono di notizie tech da Hacker News
+- Pulsante "Carica Altre" con caricamento incrementale delle news
+- Effetti visivi curati (ombre, bordi arrotondati, immagini responsive)
+- Gestione delle immagini hero dinamica tramite JavaScript
+- Organizzazione pulita di file e asset secondo convenzioni moderne
+- Code splitting e bundling con **Vite**
+
+---
+
+## 🖼 Anteprima
+
+Apri `index.html` nel browser per visualizzare la homepage.  
+Visita `news.html` per accedere alla sezione con notizie in tempo reale.
+
+---
+
+## 🌗 Modalità Scura
+
+- Attivabile con il pulsante 🌚/☀️ nella navbar
+- La scelta viene salvata automaticamente in `localStorage`
+- Tema applicato dinamicamente via classi, riflesso in tutte le pagine
+- Inizializzazione centralizzata tramite funzione `setupThemeToggle()`
+
+---
+
+## 🛠 Tecnologie Utilizzate
+
+- **HTML5** semantico
+- **SCSS** modulare (`_style.scss`, `_news.scss`, `_mixins.scss`, `_variables.scss`)
+- **JavaScript moderno (ES Modules)**
+- **Axios** per chiamate API
+- **Lodash (debounce)** per ottimizzazione interazioni
+- **Vite** per bundling, asset loading e sviluppo locale rapido
+- **Responsive design** con Flexbox e media queries
+
+---
+
+## 🔌 API Utilizzata
+
+**Hacker News API**:
+- 📥 [Elenco notizie nuove](https://hacker-news.firebaseio.com/v0/newstories.json)
+- 📄 [Dettaglio singola notizia](https://hacker-news.firebaseio.com/v0/item/{id}.json)
+
+---
+
+## 📁 Struttura del Progetto
+
+├── index.html
+├── news.html
+├── src/
+│ ├── js/
+│ │ ├── main.js
+│ │ ├── news.js
+│ │ ├── theme.js
+│ │ └── init.js
+│ ├── scss/
+│ │ ├── _style.scss
+│ │ ├── _news.scss
+│ │ ├── _mixins.scss
+│ │ ├── _variables.scss
+│ │ └── main.scss
+
+yaml
+Copia
+Modifica
+
+---
+
+## 📲 Istruzioni per l'Uso
+
+1. Clona o scarica la repository:
+   ```bash
+   git clone https://github.com/pezzox/Progetto-Js-Advanced
+   cd Progetto-Js-Advanced
+Installa le dipendenze:
+
+bash
+Copia
+Modifica
+npm install
+Avvia l'ambiente di sviluppo:
+
+bash
+Copia
+Modifica
+npm run dev
+Oppure visita la versione online:
+https://pezzox.github.io/Progetto-Js-Advanced/
+
+Interagisci con il sito:
+
+Usa il pulsante 🌚/☀️ per cambiare tema
+
+Scorri e carica notizie dalla sezione News
+
+✍️ Autore
+Progetto realizzato da Federico Pezzotti
+Come parte del percorso formativo Start2Impact.
