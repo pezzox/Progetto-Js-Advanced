@@ -61,11 +61,14 @@ Oppure vai alla versione deployata:
 
 ## 📁 Struttura del Progetto
 
-├── index.html
-├── news.html
+
 ├── vite.config.js
 ├── package.json
 ├── src/
+│ ├── index.html
+│ ├── news.html
+│ ├── assets/
+│ └── images/
 │ ├── js/
 │ │ ├── main.js
 │ │ ├── news.js
@@ -77,14 +80,8 @@ Oppure vai alla versione deployata:
 │ ├── _mixins.scss
 │ ├── _variables.scss
 │ └── main.scss
-├── public/
-│ └── images/
-│ ├── hero.jpg
-│ └── news-hero.jpg
 
-yaml
-Copia
-Modifica
+
 
 ---
 
