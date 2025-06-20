@@ -1,0 +1,19 @@
+{
+  "name": "tongue-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open /Progetto-Js-Advanced/index.html",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postbuild": "move dist\\src\\*.html dist\\ && rmdir /s /q dist\\src",
+    "deploy": "vite build && npm run postbuild && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass-embedded": "^1.89.2",
+    "vite": "^6.3.5",
+    "vite-plugin-static-copy": "^3.0.2"
+  }
+}

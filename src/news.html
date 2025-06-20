@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tongue - News</title>
+  </head>
+  <body class="light-mode">
+    <header class="site-header">
+      <div class="logo">
+        <a href="./index.html">Tongue</a>
+      </div>
+      <nav>
+        <a href="./news.html">News</a>
+        <button id="theme-toggle">🌚/☀️</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img id="hero-img" alt="Hero Image - News Section" />
+      <div class="hero-text">
+        <h1>ULTIME NOTIZIE</h1>
+        <p>Rimani aggiornato con le novità dal mondo tech.</p>
+      </div>
+    </section>
+
+    <main>
+      <section id="news-container" class="news-grid"></section>
+      <div class="center-button">
+        <button id="load-more">Carica altre</button>
+      </div>
+      <div id="loader" style="display: none;">Caricamento...</div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tongue - Progetto didattico</p>
+    </footer>
+
+    <script type="module" src="./js/news.js"></script>
+  </body>
+</html>
